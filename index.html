@@ -1,6 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+        <script src="vendors/js/jquery.waypoints.min.js"></script>
+        <script src="resources/script.js"></script>
+
+
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
@@ -15,19 +21,19 @@
 
         <title>Omnifood</title>
     </head>
-    <body>
-
-        <!-- This is Header -->
+    
+    <body>       
 
         <header>
             <nav>
                 <div class="row">
                     <img src="Omnifood Contents/logo-white.png" alt="Omnifood logo" class="logo">
+                    <img src="Omnifood Contents/logo.png" alt="Omnifood logo" class="logo-black">
                     <ul class="main-nav">
-                        <li> <a href="#"> Food delevery</a></li>
-                        <li> <a href="#"> How it works</a></li>
-                        <li> <a href="#"> Our cities</a></li>
-                        <li> <a href="#"> Sign up</a></li>
+                        <li> <a href="#feature"> Food delevery</a></li>
+                        <li> <a href="#works "> How it works</a></li>
+                        <li> <a href="#citis"> Our cities</a></li>
+                        <li> <a href="#plans"> Sign up</a></li>
                     </ul>
 
                 </div>
@@ -35,15 +41,15 @@
 
             <div class="hero-text-box">
                 <h1> Goodbye junk food.<br> Hello super helthy meals</h1>
-                <a class="btn btn-full" href="#">I'm hungry</a>
-                <a class="btn btn-ghost" href="#">Show me more</a>
+                <a class="btn btn-full js-scroll-to-plans" href="#">I'm hungry</a>
+                <a class="btn btn-ghost js-scroll-to-start" href="#">Show me more</a>
             </div>
 
         </header>
 
         <!-- This is Features part1-->
 
-        <section class="section-features">
+        <section class="section-features js-section-features" id="feature">
             <div class="row ">
                 
                 <h2> Get food fast — not fast food.</h2>
@@ -159,7 +165,7 @@
         </section>
 
 
-        <section class="section-steps">
+        <section class="section-steps" id="works">
             <div class="row">
                 <h2> How it work  &mdash; Simple as 1, 2, 3 </h2>
             </div>
@@ -197,7 +203,7 @@
   
 
 
-        <section class="section-cities">
+        <section class="section-cities" id="citis">
             <div class="row">
                 <h2>We're currently in these cities</h2>
 
@@ -316,7 +322,7 @@
         </section>
 
 
-        <section class="section-plans">
+        <section class="section-plans js-section-plans" id="plans">
             <div class="row">
                 <h2> Start eating heathy today</h2>
             </div>
@@ -490,6 +496,11 @@
             </div>
         
         </footer>
+
+        <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+        <script src="vendors/js/jquery.waypoints.min.js"></script>
+        <script src="resources/script.js"></script> -->
+
     </body>
 </html>
 
