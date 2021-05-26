@@ -261,6 +261,25 @@ input[type=submit] {
     border-bottom:2px solid #cf6d17;
 } 
 
+
+/* ------------------------------------------- */
+/* Mobile Navi...... */
+/* ------------------------------------------- */
+
+.mobile-nav-icon {
+    float: right;
+    margin-top: 30px;
+    cursor: pointer;
+    display: none;
+
+}
+
+
+.mobile-nav-icon i {
+    font-size: 200%;
+    color: #fff;
+}
+
 /* ------------------------------------------- */
 /* Sticky Navi...... */
 /* ------------------------------------------- */
@@ -650,3 +669,22 @@ footer p {
 
 } 
 
+
+/* ------------------------------------------- */
+/* Animations...... */
+/* ------------------------------------------- */
+
+.js-wp-1,
+.js-wp-2,
+.js-wp-3 {
+    opacity: 0;
+    animation-duration: 1s;
+}
+
+.js-wp-4 {animation-duration: 2s;}
+
+.js-wp-1 .animated,
+.js-wp-2 .animated,
+.js-wp-3 .animated {
+    opacity: 1;
+}

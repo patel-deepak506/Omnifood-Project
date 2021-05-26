@@ -3,7 +3,6 @@ $(document).ready(function(){
     var waypoint = new Waypoint({
         element: $('.js-section-features'),
         handler: function(direction) {
-          console.log('now u r scrolling ',direction)
           if (direction=="down"){
               $('nav').addClass("sticky");
           }else{
@@ -15,13 +14,10 @@ $(document).ready(function(){
 
       // Scroll on bottons
 
-    // $('.js-scroll-to-plans').click(function () {
-    //     console.log("This is scroll j");
-    //     $('html,body').animate({scrollTop: $('js-section-features')})
-    // })
+
 
     $('.js-scroll-to-plans').click(function(){
-        console.log("this is very good");
+        // console.log("this is very good");
         $('html,body').animate({scrollTop:$('.js-section-plans').offset().top},800)
        
     });
@@ -31,6 +27,8 @@ $(document).ready(function(){
         $('html,body').animate({scrollTop:$('.js-section-features').offset().top},800)
        
     });
+
+    //  Navigation Scroll
 
     $(function() {
         $('a[href*=#]:not([href=#])').click(function() {
@@ -47,4 +45,45 @@ $(document).ready(function(){
         });
       });
 
+      // Animaton Scroll
+      console.log("First animation");
+      $('.js-wp-1').waypoint(function(direction) {
+        $('.js-wp-1').addClass('animated fadeIn')
+      } , {
+        offset:'50%'
+      })
+      console.log("Moblie animation");
+      $('.js-wp-2').waypoint(function(direction) {
+        $('.js-wp-2').addClass('animated fadeInUp')
+      } , {
+        offset:'50%'
+      })
+      console.log("City animation");
+      $('.js-wp-3').waypoint(function(direction) {
+        $('.js-wp-3').addClass('animated fadeIn')
+      } , {
+        offset:'50%'
+      })
+      console.log("Four  animation");
+      $('.js-wp-4').waypoint(function(direction) {
+        $('.js-wp-4').addClass('animated pulse')
+      } , {
+        offset:'50%'
+      })
+
+
+      // Mobile Nav
+
+      $('.js-nav-icon ').click(function () {
+        var nav = $('.js-main-nav');
+        var icon = $('.js-nav-icon i');
+        nav.slideToggle(200);
+        if (icon.hasClass('ion-navicon-round')){
+          icon.addClass('ion-close-round')
+          icon.removeClass('ion-navicon-round')
+        }else{
+          icon.addClass('ion-navicon-round')
+          icon.removeClass('ion-close-round')
+        }
+      });
 });
